@@ -228,7 +228,8 @@ def main(args):
     input_tensor = preprocess_image(rgb_img,
                                     mean=[0.485, 0.456, 0.406],
                                     std=[0.229, 0.224, 0.225])
-    target_category = None
+
+    target_category = 281#want to set None
 
     # Using the with statement ensures the context is freed, and you can
     # recreate different CAM objects in a loop.
