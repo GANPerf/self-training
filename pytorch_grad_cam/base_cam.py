@@ -87,6 +87,8 @@ class BaseCAM:
             self.model.zero_grad()
             loss = self.get_loss(output, target_category)
             loss.backward(retain_graph=True)
+	
+	#henrytest
 
         # In most of the saliency attribution papers, the saliency is
         # computed with a single target layer.
