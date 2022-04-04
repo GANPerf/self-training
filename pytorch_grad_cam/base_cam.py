@@ -197,6 +197,7 @@ class BaseCAM:
 
     def __del__(self):
         self.activations_and_grads.release()
+	#henry test
 
     def __enter__(self):
         return self
